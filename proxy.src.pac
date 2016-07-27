@@ -18,6 +18,7 @@ function FindProxyForURL(url, host) {
 
   var proxy2 = prefix + '2' + postfix;
   var proxy6 = prefix + '6' + postfix;
+  //var proxy7 = prefix + '7' + postfix;
 
   if (dnsDomainIs(host, 'mobile01.com')
       || dnsDomainIs(host, 'nextmag.com.tw')
@@ -59,6 +60,7 @@ function FindProxyForURL(url, host) {
       || dnsDomainIs(host, 'tw.freebsd.org')
       || dnsDomainIs(host, 'sitetag.us')
       || dnsDomainIs(host, 'edgesuite.net')
+      || dnsDomainIs(host, 'ubuntu-tw.net')
       ) {
     return proxy2 + proxy6 + dt;
   }
